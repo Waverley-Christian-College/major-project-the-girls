@@ -2,14 +2,15 @@ import requests
 import json
 from datetime import datetime
 import matplotlib.pyplot as plt
+import os
 
 # Your Tiingo API token
-API_TOKEN = "API_TOKEN"
+API_TOKEN = os.getenv("API_SECRET")
 
 # Parameters
-symbol = "NVDA"
-start_date = "2025-01-01"
-end_date = "2025-04-01"
+symbol = "ASX"
+start_date = "2025-04-16"
+end_date = "2025-05-01"
 
 url = f"https://api.tiingo.com/tiingo/daily/{symbol}/prices"
 headers = {
