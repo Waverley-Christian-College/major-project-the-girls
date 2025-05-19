@@ -8,11 +8,10 @@ import os
 API_TOKEN = os.getenv("API_SECRET")
 print(f"This is my API TOKEN: {API_TOKEN}")
 
-
 # Parameters
-symbol = "NVDA"
-start_date = "2025-01-01"
-end_date = "2025-04-01"
+symbol = "ASX"
+start_date = "2025-04-16"
+end_date = "2025-05-01"
 
 url = f"https://api.tiingo.com/tiingo/daily/{symbol}/prices"
 headers = {
