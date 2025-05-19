@@ -11,7 +11,7 @@ print(f"This is my API TOKEN: {API_TOKEN}")
 # Parameters
 symbol = "ASX"
 start_date = "2025-04-16"
-end_date = "2025-05-01"
+end_date = "2025-05-19"
 
 url = f"https://api.tiingo.com/tiingo/daily/{symbol}/prices"
 headers = {
