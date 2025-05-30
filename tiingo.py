@@ -11,6 +11,7 @@ API_TOKEN = os.getenv("API_SECRET")
 symbol = input("Enter company symbol: ") 
 start_date = input("Enter the start date (YYYY-MM-DD): ") 
 end_date = input("Enter the end date (YYYY-MM-DD): ") # Ensure the dates are working days
+shares_bought = int(input("Enter the shares you bought: ")) #Enter the amount of shares you invested
 
 url = f"https://api.tiingo.com/tiingo/daily/{symbol}/prices"
 headers = {
@@ -57,9 +58,13 @@ for entry in data:
     if date_str == end_date:
         close_end = entry["close"]
     
+price_spent = shares_bought * close_start
+shares_holding = shares_bought * close_end
 print(f"Close price on {start_date}: {close_start}")
 print(f"Close price on {end_date}: {close_end}")
-price_change = round(close_end - close_start, 2)
+print(f"Price spent: {price_spent} USD")
+print(f"Shares hloding on end_date: {shares_holding} USD")
+price_change = round(shares_holding - price_spent, 2)
 if price_change > 0:
     print(f"Profit: {price_change} USD")
 else:
