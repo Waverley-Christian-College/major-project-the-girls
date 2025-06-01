@@ -60,12 +60,16 @@ for entry in data:
     
 price_spent = shares_bought * close_start
 shares_holding = shares_bought * close_end
-print(f"Close price on {start_date}: {close_start}")
-print(f"Close price on {end_date}: {close_end}")
-print(f"Price spent: {price_spent} USD")
-print(f"Shares hloding on end_date: {shares_holding} USD")
-price_change = round(shares_holding - price_spent, 2)
+GREEN = "\033[92m"
+RED = "\033[91m"
+RESET = "\033[0m"
+print(f"{GREEN}Close price on {start_date}: {close_start}{RESET}")
+print(f"{GREEN}Close price on {end_date}: {close_end}{RESET}")
+print(f"{GREEN}Price spent: {price_spent} USD{RESET}")
+print(f"{GREEN}Shares hloding on end_date: {shares_holding} USD{RESET}")
+
+price_change = round(shares_holding - price_spent, 2) # Calculate the price change
 if price_change > 0:
-    print(f"Profit: {price_change} USD")
+    print(f"{GREEN}Profit: {price_change} USD{RESET}")
 else:
-    print(f"Loss: {abs(price_change)} USD")
+    print(f"{RED}Loss: {abs(price_change)} USD{RESET}")
