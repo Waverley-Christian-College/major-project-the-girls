@@ -1,0 +1,24 @@
+🧠 AI-Assisted Coding - Reflection #1
+
+Your Name: Winnie Xu
+
+🧩 What were you trying to do?
+Describe the coding task or challenge you were working on. What problem were you trying to solve?
+    Your response: 
+I updated, committed and pulled the README1.md file, which had our plan on what to import, analyse and output. I then attempted at importing some of the things I needed, like requests, tingo and the sentiment analyser, but the sentiment analyser wasn't working and had errors. I'm not sure how to fix it. I did ask AI, but it still didn't work. 
+
+🤖 How did you use AI?
+Include the prompts you gave to the AI (e.g., ChatGPT, GitHub Copilot), what it responded with, and how you used or changed its suggestions.
+    Your response:
+I asked it to help me plan what the output should be, so like printing out the line graph using matplotlib. I also asked it to help me write a code and explain what it did by giving it my plan, and it came out with the imports and all that but when I put it into my code it didn't work. 
+
+📘 What did you learn from the AI?
+What did the AI help you understand? Did you accept its suggestions as-is, change them, or decide not to use them? Explain why.
+    Your response:
+It helped me understand how my code should run, like the steps and what to do. I did change one of its decisions when it suggested I could make a graph on how positive the companies' new headlines are, but I changed it to how well their stocks are going. 
+
+🔁 What would you do differently next time?
+Reflect on your process. How would you improve your prompt, your code, or your thinking if you faced this task again?
+    Your response:
+I would research more on the sentiment analyser thing that I will use because I wasn't very sure on how to import in into the code. 
+
