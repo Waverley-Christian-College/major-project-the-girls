@@ -5,6 +5,7 @@ import os
 import matplotlib.pyplot as plt
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
+# Your tiingo API TOKEN
 API_KEY = '5296eb9cb95697ef016ac7de004f18c24ecfad7c'
 
 def fetch_news(ticker):
@@ -12,13 +13,14 @@ def fetch_news(ticker):
     headers = {
      "Content-Type": "application/json",
      "Authorization": f"Token {API_KEY}"
-    
+ # fetches the news from a specific company   
     }
     response = requests.get(url, headers=headers)
     if response.status_code == 200:
         news_data = response.json()
         headlines = [article['title'] for article in news_data]
         return headlines
+#gets the headlines of the news articles
     else:
         print('Error fetching news.')
         return []
@@ -29,14 +31,16 @@ news_headlines = json.dumps(news_headlines, indent=4)
 
 analyzer = SentimentIntensityAnalyzer()
 sentiment_scores = analyzer.polarity_scores(news_headlines)
+# use the vader sentiment analyzer to analyse news headlines on the company to see if it is doing well
 compound = sentiment_scores['compound']
 print(sentiment_scores['compound'])
+# print out the overall score of the company, then comments on if it is doing well
 if compound > 0:
-    print('Positive')
+    print(f'{TICKER} is doing well')
 elif compound == 0:
-    print('Neutral')
+    print(f'{TICKER} is so-so')
 elif compound < 0:
-    print('Negative')
+    print(f'{TICKER} is not doing well')
 else:
     print('Sorry, the analyzer did not work.')
 
