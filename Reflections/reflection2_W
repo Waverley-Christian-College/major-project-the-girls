@@ -1,0 +1,24 @@
+🧠 AI-Assisted Coding - Reflection #2
+
+Wednesday, 28 May 2025
+9:39 PM
+
+Your Name: Winnie Xu
+
+🧩 What were you trying to do?
+Describe the coding task or challenge you were working on. What problem were you trying to solve?
+    I figured out how to use the sentiment intensity analyser
+
+🤖 How did you use AI?
+Include the prompts you gave to the AI (e.g., ChatGPT, GitHub Copilot), what it responded with, and how you used or changed its suggestions.
+    I got a little help from copilot on how to how to install the function. 
+    I also asked it how the sentiment intensity analyser works. 
+
+📘 What did you learn from the AI?
+What did the AI help you understand? Did you accept its suggestions as-is, change them, or decide not to use them? Explain why.
+    It helped me understand how the function works. I learnt that it has a pre-built dictionary, with three scores of the positivity, negativity neutral levels of the text, and it also analyses the punctuation, capitalization and context. Then there is emoji and slang detection, and the result is shown in compound score, where if it is over 0, it is positive, if it is 0, it is neutral and if it is negative, it is under 0. 
+
+🔁 What would you do differently next time?
+Reflect on your process. How would you improve your prompt, your code, or your thinking if you faced this task again?
+    Do it quicker, but I think I did fine. 
+

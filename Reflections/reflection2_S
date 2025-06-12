@@ -1,0 +1,20 @@
+🧠 AI-Assisted Coding - Reflection #2
+
+
+Your Name: Susie Chan
+
+🧩 What were you trying to do?
+Describe the coding task or challenge you were working on. What problem were you trying to solve?
+    Your response: I'm aiming to refine the layout of the graph because when the date range is quite wide the dates on the x-axis became too squishy.
+
+🤖 How did you use AI?
+Include the prompts you gave to the AI (e.g., ChatGPT, GitHub Copilot), what it responded with, and how you used or changed its suggestions.
+    Your response: I asked AI 'how to simplify the layout of the graph if the date range is quite wide'. It responded codes that could deal with this issue with some code that were already existed. I copy and pasted a section of the response that was directly solving the problem and changed some of my code according to the added code.
+
+📘 What did you learn from the AI?
+What did the AI help you understand? Did you accept its suggestions as-is, change them, or decide not to use them? Explain why.
+    Your response: it helped me to understand how to simply the layout of the graph by showing particular dates due to the range. I accepted its suggestion because it did work and was helpful.
+
+🔁 What would you do differently next time?
+Reflect on your process. How would you improve your prompt, your code, or your thinking if you faced this task again?
+    Your response: next time I might try to do it myself first before asking AI as I've learnt the strategy.
