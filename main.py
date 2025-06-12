@@ -46,7 +46,7 @@ else:
 
 
 # Parameters, company symbol, date range, and shares bought
-symbol = input("Enter company symbol: ") 
+symbol = TICKER
 start_date = input("Enter the start date (YYYY-MM-DD): ") 
 end_date = input("Enter the end date (YYYY-MM-DD): ") # Ensure the dates are working days
 shares_bought = int(input("Enter the shares you bought: ")) #Enter the amount of shares you invested
